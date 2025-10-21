@@ -1,0 +1,23 @@
+# Python virtual environment
+venv/
+.venv/
+
+# Python cache/compiled files
+__pycache__/
+*.py[cod]
+*.class
+
+# IDE folders
+.vscode/
+.idea/
+
+# OS-specific files
+.DS_Store
+
+# Secrets file (IMPORTANT!)
+.env
+
+# Build artifacts / Distribution files
+dist/
+build/
+*.egg-info/
