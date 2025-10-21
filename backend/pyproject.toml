@@ -1,0 +1,14 @@
+[project]
+name = "project_kepler_backend"
+version = "0.1.0"
+description = "Backend API for Project Kepler (Elastic + Google Cloud)"
+requires-python = ">=3.10"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+# Tells setuptools where our actual package code ('app') lives
+[tool.setuptools]
+packages = ["app"]
+package-dir = {"" = "src"}
