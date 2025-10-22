@@ -1,16 +1,13 @@
 import pytest
-# This import will fail initially!
-from app.elastic import es_client
+# REMOVED: from app.elastic import es_client - No longer exists
 
 @pytest.mark.asyncio
-async def test_elastic_ping():
-    """
-    Tests that the Elastic client can be created and can ping the cluster.
-    Assumes ELASTIC_HOSTS and ELASTIC_API_KEY are in the environment (via .env).
-    """
-    assert es_client is not None, "Elastic client instance should be created"
+# Accept the fixture as an argument
+async def test_elastic_ping(es_test_client): # <-- USE FIXTURE
+    """ Tests that the Elastic client fixture connects successfully. """
+    # Fixture already calls ping during setup, just assert it exists
+    assert es_test_client is not None, "Elastic client fixture failed to create"
 
-    # The async client's .ping() returns True on success, raises error on fail
-    is_connected = await es_client.ping()
-
-    assert is_connected is True, "Client should successfully ping the cluster"
+    # Optional: Ping again within the test if desired
+    is_connected = await es_test_client.ping()
+    assert is_connected is True, "Client failed to ping within the test"

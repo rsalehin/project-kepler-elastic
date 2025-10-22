@@ -30,3 +30,6 @@ gcp_service_account.json
 
 # GCP Credentials
 gcp_service_account.json
+
+# Generated images
+backend/src/app/static/*.png
