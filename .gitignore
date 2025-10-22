@@ -24,3 +24,6 @@ build/
 
 # Raw Data Files
 data/
+
+# GCP Credentials
+gcp_service_account.json
