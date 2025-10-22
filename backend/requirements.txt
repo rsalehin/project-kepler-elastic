@@ -1,3 +1,4 @@
+aiofiles==25.1.0
 aiohappyeyeballs==2.6.1
 aiohttp==3.13.1
 aiosignal==1.4.0
@@ -66,7 +67,7 @@ packaging==25.0
 pandas==2.3.3
 pillow==11.3.0
 pluggy==1.6.0
--e git+https://github.com/rsalehin/project-kepler-elastic.git@a0d9308080f4cd64494f64e2d35d6542ebc03451#egg=project_kepler_backend&subdirectory=backend
+-e git+https://github.com/rsalehin/project-kepler-elastic.git@77a0dfb0f9f525679d132fea49fb498e306f7b81#egg=project_kepler_backend&subdirectory=backend
 propcache==0.4.1
 proto-plus==1.26.1
 protobuf==6.33.0
@@ -83,6 +84,7 @@ pytest==8.4.2
 pytest-asyncio==1.2.0
 python-dateutil==2.9.0.post0
 python-dotenv==1.1.1
+python-multipart==0.0.20
 pytz==2025.2
 pyvo==1.7.1
 pywin32-ctypes==0.2.3
